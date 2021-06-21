@@ -1,0 +1,12 @@
+{
+  "name": "nlwV",
+  "displayName": "nlwV",
+  "expo": {
+    "name": "nlwV",
+    "slug": "nlwV",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
