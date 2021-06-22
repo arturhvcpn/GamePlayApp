@@ -10,6 +10,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#070B24"
     },
+    "packagerOpts": { 
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "svg", "svgx"] 
+    },
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

@@ -1,9 +1,10 @@
 import React from 'react';
-import { TouchableOpacity, TouchableOpacityProps, View, Image, Text } from 'react-native';
+import { View, Image, Text } from 'react-native';
+import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
-interface ButtonIconProps extends TouchableOpacityProps{
+interface ButtonIconProps extends RectButtonProps{
     title: string;
     image?: string;
 }
@@ -11,7 +12,7 @@ interface ButtonIconProps extends TouchableOpacityProps{
 
 export function ButtonIcon({title, image, ...rest}: ButtonIconProps){
     return(
-        <TouchableOpacity 
+        <RectButton 
             style={styles.container}
             activeOpacity={0.8}
             {...rest}
@@ -22,6 +23,6 @@ export function ButtonIcon({title, image, ...rest}: ButtonIconProps){
                 <Text style={styles.title}>
                     {title}
                 </Text>
-        </TouchableOpacity>
+        </RectButton>
     );
 }
