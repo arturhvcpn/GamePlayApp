@@ -1,6 +1,5 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
-import { theme } from '../../../global/theme';
 
 export const styles = StyleSheet.create({
     container:{
@@ -11,6 +10,14 @@ export const styles = StyleSheet.create({
         paddingHorizontal:24,
         flexDirection:'row',
         justifyContent:'space-between',
-        marginTop: Platform.OS === 'ios' ? getStatusBarHeight() + 56 : 56,
+        marginTop:  getStatusBarHeight() + 26,
+        marginBottom:42,
+    },
+    content:{
+        marginTop:42,
+    },
+    matches:{
+        marginTop:24,
+        marginLeft:24,
     },
 })
