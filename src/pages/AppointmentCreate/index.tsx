@@ -9,6 +9,7 @@ import { CategorySelect } from '../../components/CategorySelect';
 
 import { styles } from './styles';
 import { theme } from '../../../global/theme';
+import { SmallBox } from '../../components/SmallBox';
 
 export function AppointmentCreate(){
     const [category, setCategory] = useState('');
@@ -41,6 +42,26 @@ export function AppointmentCreate(){
 
                 </RectButton>
 
+                <View style={styles.field}>
+                    <View>
+                        <Text style={[styles.title, { marginBottom:16,}]}>Dia e mês</Text>
+
+                        <View style={styles.column}>
+                            <SmallBox maxLength={2}/>
+                            <Text style={styles.divider}>/</Text>
+                            <SmallBox maxLength={2}/>
+                        </View>
+                    </View>
+                    <View>
+                        <Text style={[styles.title, { marginBottom:16,}]}>Horário</Text>
+
+                        <View style={styles.column}>
+                            <SmallBox maxLength={2}/>
+                            <Text style={styles.divider}>:</Text>
+                            <SmallBox maxLength={2}/>
+                        </View>
+                    </View>
+                </View>
             </View>
         </Background>
     );

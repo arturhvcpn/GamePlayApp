@@ -51,5 +51,21 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
     },
+    field:{
+        width:'100%',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        marginTop:30
+    },
+    column:{
+        flexDirection:'row',
+        alignItems: 'center',
+    },
+    divider:{
+        marginRight:4,
+        fontSize: 14,
+        fontFamily: theme.fonts.text_regular,
+        color: theme.colors.highlight,
+    },
     
 });
