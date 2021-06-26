@@ -3,14 +3,11 @@ import { TextInput, TextInputProps } from 'react-native';
 
 import { styles } from './styles';
 
-interface SmallBoxProps extends TextInputProps{
+interface SmallBoxProps extends TextInputProps{}
 
-}
-
-export function SmallBox({...rest}:SmallBoxProps){
+export function TextArea({...rest}:SmallBoxProps){
     return(
         <TextInput 
-            keyboardType='numeric'
             style={styles.container} 
             {...rest} 
         />

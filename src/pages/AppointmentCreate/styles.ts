@@ -67,5 +67,14 @@ export const styles = StyleSheet.create({
         fontFamily: theme.fonts.text_regular,
         color: theme.colors.highlight,
     },
+    subtitle:{
+        fontSize: 13,
+        fontFamily: theme.fonts.text_regular,
+        color: theme.colors.highlight,
+    },
+    footer:{
+        marginVertical:20,
+        marginBottom:56,
+    },
     
 });
