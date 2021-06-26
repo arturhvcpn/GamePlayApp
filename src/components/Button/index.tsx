@@ -1,0 +1,24 @@
+import React from 'react';
+import { Text } from 'react-native';
+import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
+
+import { styles } from './styles';
+
+interface ButtonProps extends RectButtonProps{
+    title: string;
+}
+
+
+export function Button({title, ...rest}: ButtonProps){
+    return(
+        <RectButton 
+            style={styles.container}
+            activeOpacity={0.8}
+            {...rest}
+        >
+                <Text style={styles.title}>
+                    {title}
+                </Text>
+        </RectButton>
+    );
+}
